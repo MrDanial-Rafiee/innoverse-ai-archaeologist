@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Encyclopedia of the History of Akkadian Civilization</title>
+<meta name="description" content="Site meta description goes here.">
+<link rel="icon" href="images/logo.gif" type="image/gif">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=29">
+</head>
+<body>
+
+<!-- =========================================================
+     INTRO SPLASH
+     Full-screen image; on click it shatters into puzzle pieces
+     that swirl (like water down a drain) into the site logo.
+     Behaviour in js/intro.js.
+     ========================================================= -->
+<div id="introSplash">
+  <img class="intro-img" src="images/Turn%20the%20page..jpg" alt="Enter the site">
+  <div class="intro-stage"></div>
+  <div class="intro-glow"></div>
+  <div class="intro-hint">click to enter</div>
+</div>
+
+<!-- =========================================================
+     HEADER
+     ========================================================= -->
+<header class="site-header">
+  <div class="header-inner container">
+
+    <a href="index.html" class="logo">
+      <img src="images/logo.gif" alt="Site logo">
+      <span class="logo-text">IRT</span>
+    </a>
+
+    <div class="header-search">
+      <input type="text" placeholder="Search or ask a question...">
+    </div>
+
+    <div class="header-social">
+      <a href="#" aria-label="Facebook" class="social-icon">
+        <svg viewBox="0 0 24 24"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V8c0-.9.25-1.5 1.53-1.5H17V3.7c-.28-.04-1.24-.12-2.36-.12-2.33 0-3.93 1.42-3.93 4.03V10H8v3.1h2.71V21h2.79z"/></svg>
+      </a>
+      <a href="#" aria-label="Instagram" class="social-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 2.2c2.7 0 3 0 4.1.06 1 .05 1.5.21 1.9.35.5.2.8.4 1.2.75.35.35.55.65.75 1.15.14.4.3.9.35 1.9.05 1.1.06 1.4.06 4.1s0 3-.06 4.1c-.05 1-.21 1.5-.35 1.9-.2.5-.4.8-.75 1.2-.35.35-.65.55-1.15.75-.4.14-.9.3-1.9.35-1.1.05-1.4.06-4.1.06s-3 0-4.1-.06c-1-.05-1.5-.21-1.9-.35-.5-.2-.8-.4-1.2-.75-.35-.35-.55-.65-.75-1.15-.14-.4-.3-.9-.35-1.9C2.2 15 2.2 14.7 2.2 12s0-3 .06-4.1c.05-1 .21-1.5.35-1.9.2-.5.4-.8.75-1.2.35-.35.65-.55 1.15-.75.4-.14.9-.3 1.9-.35C7.5 3.7 7.8 3.7 12 3.7z"/></svg>
+      </a>
+      <a href="#" aria-label="YouTube" class="social-icon">
+        <svg viewBox="0 0 24 24"><path d="M23 12s0-3.6-.46-5.3a3 3 0 0 0-2.1-2.1C18.7 4 12 4 12 4s-6.7 0-8.44.6a3 3 0 0 0-2.1 2.1C1 8.4 1 12 1 12s0 3.6.46 5.3a3 3 0 0 0 2.1 2.1C5.3 20 12 20 12 20s6.7 0 8.44-.6a3 3 0 0 0 2.1-2.1C23 15.6 23 12 23 12zM9.75 15.5v-7l6 3.5z"/></svg>
+      </a>
+    </div>
+
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+  </div>
+
+  <!-- =========================================================
+       NAVIGATION
+       ========================================================= -->
+  <nav class="site-nav">
+    <ul class="nav-list container">
+      <li><a href="index.html" data-nav="home">Home</a></li>
+      <li><a href="#about" data-nav="about">About</a></li>
+      <li><a href="#ai-engine" data-nav="ai-engine">AI Engine</a></li>
+      <li><a href="#support" data-nav="support">Support Us</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- =========================================================
+     TOP BANNER STRIP (full-width thin banner image)
+     ========================================================= -->
+<div class="top-banner-strip">
+  <img src="images/banner-strip.jpg" alt="Site top banner">
+</div>
+
+<main>
+
+  <!-- =========================================================
+       HERO TITLE
+       ========================================================= -->
+  <section class="hero-title container">
+    <h1>Encyclopedia of the History of Akkadian Civilization</h1>
+    <p class="hero-sub">At its heart, a live <b>AI engine that translates and reconstructs broken Akkadian tablets</b> — wrapped in a full cuneiform dictionary, an illustrated history of the world's first empire, its maps, and the scholars who deciphered the language.</p>
+  </section>
+
+  <!-- =========================================================
+       HERO ACCORDION (hover-expand strip, matches the reference site)
+       - no autoplay, no arrows, no dots
+       - hovering a panel expands it and reveals its image
+       - each panel is a clickable link
+       ========================================================= -->
+  <section class="hero-accordion container" aria-label="Featured sections">
+    <div class="accordion" id="mainAccordion">
+
+      <a href="#panel-translation" class="accordion-item is-active" data-panel="panel-translation">
+        <img src="images/slide-2-translation.jpg" alt="AI Translate — Akkadian dictionary">
+        <span class="accordion-label">AI Translate</span>
+      </a>
+
+      <a href="#panel-akkadian" class="accordion-item" data-panel="panel-akkadian">
+        <img src="images/slide-1-akkadian.jpg" alt="Akkadian civilization">
+        <span class="accordion-label">Akkadian civilization</span>
+      </a>
+
+      <a href="#panel-myteam" class="accordion-item" data-panel="panel-myteam">
+        <img src="images/slide-3-myteam.jpg" alt="Developer Team">
+        <span class="accordion-label">Developer Team</span>
+      </a>
+
+      <a href="#panel-territory" class="accordion-item" data-panel="panel-territory">
+        <img src="images/slide-4-territorymap.jpg" alt="Territory map">
+        <span class="accordion-label">Territory map</span>
+      </a>
+
+      <a href="#panel-masters" class="accordion-item" data-panel="panel-masters">
+        <img src="images/slide-5-master.jpg" alt="Masters of Akkadian"
+             onerror="this.style.display='none'; this.parentElement.classList.add('acc-noimg');">
+        <span class="accordion-label">Masters of Akkadian</span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- =========================================================
+       ACCORDION DETAIL PANELS
+       One panel per accordion item, fades in below the strip when
+       its item is clicked. Edit the text/images inside each
+       .detail-panel below — everything here is safe to replace.
+       ========================================================= -->
+  <section class="panel-details container" id="panelDetails">
+
+    <!-- =========================================================
+         AKKADIAN ARTICLE
+         This whole panel fades in when the "Akkadian civilization"
+         slide above is clicked.
+
+         HOW TO EDIT THE IMAGES:
+           • Every picture is one <figure class="akkad-fig"> ... </figure> block.
+           • To ADD an image  : copy any <figure> block, then change its
+                                 src="images/..." and its <figcaption> text.
+           • To REMOVE an image: delete that whole <figure> block.
+           • Add ".akkad-fig--right" to a figure to float it to the side.
+           • Put new image files in the images/ folder first.
+         ========================================================= -->
+    <div class="detail-panel" id="panel-akkadian">
+      <article class="akkad-article">
+
+        <!-- ============ MAIN COLUMN ============ -->
+        <div class="akkad-body">
+
+          <header class="akkad-head">
+            <h2>Akkad &amp; the Akkadian Empire</h2>
+            <p class="akkad-sub">The First Multinational Empire in the World</p>
+          </header>
+
+          <figure class="akkad-fig">
+            <img src="images/slide-1-akkadian.jpg" alt="Winged-genie relief in the Akkadian tradition">
+            <figcaption>A winged protective spirit carved in relief, in the Mesopotamian tradition that Akkad helped shape. <span class="src">Wikimedia Commons</span></figcaption>
+          </figure>
+
+          <p>Akkad — also written as Agade — was the seat of the Akkadian Empire, the first state to bind the many peoples of ancient Mesopotamia under a single government. It rose in the second half of the third millennium BCE, founded (or, as some scholars argue, refounded) by a ruler that history remembers as Sargon the Great. The exact site of the city has never been located; the surviving sources place it somewhere along the Euphrates, most likely between Sippar and Kish.</p>
+
+          <figure class="akkad-fig akkad-fig--right">
+            <img src="images/akkad-map.svg" alt="Map of the Akkadian Empire at its greatest extent">
+            <figcaption>The Akkadian Empire at its height under Naram-Sin. <span class="src">Wikimedia Commons (CC BY-SA)</span></figcaption>
+          </figure>
+
+          <p>From that lost capital, Sargon and his heirs unified the rival city-states of Sumer and pushed their authority outward until Akkadian scribes could boast of a realm reaching from the Persian Gulf to the Mediterranean coast and Cyprus. For a few generations it was the largest political entity the world had yet seen.</p>
+
+          <h3>The King of Uruk &amp; the Rise of Sargon</h3>
+          <p>Little is certain about Sargon's origins. The later legends that grew around him — the abandoned infant set adrift on the river, the royal cupbearer who seized a throne — belong more to myth than to history. What the record does suggest is that the wealth and organisation already present in cities such as Mari, and across Sumer more broadly, gave an ambitious ruler the means to build a centralised state. Sargon brought the Sumerian cities under his own command, campaigned in every direction, and made Akkad the centre of his growing empire.</p>
+
+          <blockquote class="pull-quote">It is possible that Sargon restored Akkad rather than built it.</blockquote>
+
+          <figure class="akkad-fig">
+            <img src="images/sargon-head.jpg" alt="Bronze head of an Akkadian ruler">
+            <figcaption>Bronze head of an Akkadian ruler found at Nineveh, often identified with Sargon or his grandson Naram-Sin. <span class="src">Wikimedia Commons (public domain)</span></figcaption>
+          </figure>
+
+          <h3>Sargon's Rule</h3>
+          <p>Sargon's dynasty is remembered less for the extent of its conquests than for the administrative model it left behind — one that later Mesopotamian and Assyrian kings would copy for centuries. Akkad introduced a shared court language for record-keeping, standardised weights and measures, improved roads, and an early postal system whose clay-sealed messages could only be opened by breaking them open. Trusted governors were installed across the conquered cities to hold the empire together.</p>
+          <p>Sargon also placed his own daughter, Enheduanna, as high priestess of the moon god at Ur, giving him religious as well as political reach far from the capital. Her hymns survive to this day, and she is honoured as the earliest author in world history known to us by name.</p>
+
+          <figure class="akkad-fig akkad-fig--right">
+            <img src="images/enheduanna-disk.jpg" alt="The Disk of Enheduanna">
+            <figcaption>The Disk of Enheduanna, daughter of Sargon and history's first named author. <span class="src">Wikimedia Commons (CC BY)</span></figcaption>
+          </figure>
+
+          <h3>Naram-Sin: Greatest of the Akkadian Kings</h3>
+          <p>The empire reached its height about a century later under Sargon's grandson, Naram-Sin, who campaigned as far as the borders of Egypt and crushed a broad revolt of the subject cities early in his reign. He was the first Mesopotamian king to have himself declared a living god. On his famous victory monument he climbs a mountain above his fallen enemies, wearing the horned crown that marked divinity — a bolder claim of power than any king before him had dared to make.</p>
+
+          <figure class="akkad-fig">
+            <img src="images/naramsin-stele.jpg" alt="Victory Stele of Naram-Sin">
+            <figcaption>The Victory Stele of Naram-Sin (Louvre); the king ascends wearing the horned crown of a god. <span class="src">Wikimedia Commons (public domain)</span></figcaption>
+          </figure>
+
+          <h3>The Decline of Akkad</h3>
+          <p>Within a few generations of Naram-Sin's death the dynasty's fortunes collapsed. The state was worn down by repeated revolts, by raids from the Gutians of the Zagros mountains, and — according to more recent research — by a period of severe drought and famine brought on by climate change. By around 2154 BCE the Akkadian Empire had fallen, and its capital was abandoned so completely that its location remains one of the unsolved puzzles of Mesopotamian archaeology.</p>
+
+          <figure class="akkad-fig">
+            <img src="images/standard-of-ur.jpg" alt="The War panel of the Standard of Ur">
+            <figcaption>The "War" panel of the Standard of Ur, from Early Dynastic Sumer, the world Akkad grew out of. <span class="src">Wikimedia Commons</span></figcaption>
+          </figure>
+
+          <h3>Conclusion</h3>
+          <p>Even so, the memory of Akkad outlasted its ruins. The kings of Sargon's line were remembered as a golden standard of kingship, and their story passed into legend, poetry, and prophecy. The machinery of empire they built was revived by later powers — the kings of Ur, the Babylonians under Hammurabi, and above all the Neo-Assyrian Empire, which would once again unite Mesopotamia under a single crown. The first empire in the world had shown what was possible, and those who came after it never forgot.</p>
+
+          <figure class="akkad-fig">
+            <img src="images/neo-assyrian-map.jpg" alt="Map of the Neo-Assyrian Empire">
+            <figcaption>The Neo-Assyrian Empire, the later power that reunited the lands Akkad first joined together. <span class="src">Wikimedia Commons</span></figcaption>
+          </figure>
+
+          <!-- ADD MORE IMAGES HERE: copy a <figure class="akkad-fig"> block from above -->
+
+        </div>
+
+        <!-- ============ RIGHT SIDEBAR ============ -->
+        <aside class="akkad-sidebar">
+
+          <div class="side-box">
+            <h4>At a Glance</h4>
+            <ul class="glance-list">
+              <li><span>Capital</span> Akkad (Agade)</li>
+              <li><span>Founder</span> Sargon the Great</li>
+              <li><span>Region</span> Mesopotamia</li>
+              <li><span>Languages</span> Akkadian &amp; Sumerian</li>
+              <li><span>Peak ruler</span> Naram-Sin</li>
+              <li><span>Fell</span> c. 2154 BCE</li>
+            </ul>
+          </div>
+
+          <div class="side-box timeline">
+            <h4>Timeline</h4>
+            <ul class="timeline-list">
+              <li><span class="tl-date">c. 2334 BCE</span> Sargon founds the Akkadian Empire and unites Sumer.</li>
+              <li><span class="tl-date">c. 2279 BCE</span> Death of Sargon; his sons Rimush and Manishtushu reign.</li>
+              <li><span class="tl-date">c. 2261 BCE</span> Enheduanna serves as high priestess at Ur.</li>
+              <li><span class="tl-date">c. 2255 BCE</span> Naram-Sin takes the throne; the empire reaches its height.</li>
+              <li><span class="tl-date">c. 2218 BCE</span> Shar-Kali-Sharri struggles to hold the empire together.</li>
+              <li><span class="tl-date">c. 2154 BCE</span> The Akkadian Empire collapses; the Gutian period begins.</li>
+            </ul>
+          </div>
+
+        </aside>
+
+      </article>
+    </div>
+
+    <!-- =========================================================
+         TRANSLATE (Akkadian dictionary)
+         On-screen transliteration keyboard + two-way word lookup.
+         Data (lazy-loaded on first open): data/akkadian/akkadian_dictionary.js
+         ========================================================= -->
+    <div class="detail-panel" id="panel-translation">
+      <h2>Translate &mdash; Akkadian Dictionary</h2>
+
+      <div class="translate-tool" id="translateTool" data-dir="akk2en">
+
+        <div class="tr-bar">
+          <span class="tr-dir-badge"><span id="trFrom">Akkadian</span> &rarr; <span id="trTo">English</span></span>
+          <div class="tr-bar-btns">
+            <button type="button" class="tr-btn tr-btn--speak" id="trSpeak" title="Speak the Akkadian pronunciation (teaching aid)">&#128266; Speak</button>
+            <button type="button" class="tr-btn" id="trToggle" title="Swap the two languages">&#8646; Swap</button>
+            <button type="button" class="tr-btn" id="trCopy" title="Copy what you typed">&#128203; Copy</button>
+            <button type="button" class="tr-btn" id="trPaste" title="Paste Akkadian (cuneiform or transliteration) from the clipboard">&#128229; Paste</button>
+            <button type="button" class="tr-btn" id="trClear" title="Clear">&#10005; Clear</button>
+          </div>
+        </div>
+
+        <div class="tr-speak-controls">
+          <label class="tr-sc">Voice <select id="trVoice" aria-label="Speech voice"></select></label>
+          <label class="tr-sc">Speed <input type="range" id="trRate" min="0.5" max="1.1" step="0.05" value="0.85"></label>
+          <label class="tr-sc"><input type="checkbox" id="trSyl" checked> syllable-by-syllable</label>
+          <span class="tr-sc tr-sc-note">pronunciation is a reconstructed approximation</span>
+        </div>
+
+        <!-- TOP box: what you type -->
+        <div class="tr-field">
+          <span class="tr-flabel" id="trTopLabel">Akkadian (cuneiform)</span>
+          <!-- akk2en: cuneiform display, filled by tapping the keyboard -->
+          <div id="trCuneBox" class="tr-input tr-cunebox is-empty" tabindex="0" role="textbox" aria-label="Cuneiform input">
+            <span class="tr-cune-line" id="trCuneLine"></span>
+            <span class="tr-translit-line" id="trTranslitLine"></span>
+            <span class="tr-cune-ph" id="trCunePh">Tap the keys to write in cuneiform…</span>
+          </div>
+          <!-- en2akk: plain English text box -->
+          <textarea id="trInput" class="tr-input is-hidden" rows="2"
+                    placeholder="Type an English word or phrase — e.g. king, water, great king"
+                    autocomplete="off" spellcheck="false"></textarea>
+        </div>
+
+        <div class="tr-arrow">&#8595;</div>
+
+        <!-- BOTTOM box: live translation -->
+        <div class="tr-field">
+          <span class="tr-flabel" id="trBotLabel">English</span>
+          <div id="trOutput" class="tr-output"><span class="tr-hint">The meaning appears here as you type.</span></div>
+        </div>
+
+        <!-- cuneiform keyboard (hover a key to see more signs); built by js/script.js -->
+        <div class="tr-keyboard" id="trKeyboard" aria-label="Akkadian cuneiform keyboard"></div>
+
+        <p class="tr-credit">Keys show cuneiform — hover a key for more signs. Cuneiform is authentic where available in the data, otherwise an approximate syllabic spelling. Dictionary: Oracc &amp; OGSL — CC&nbsp;BY-SA&nbsp;3.0 · 11,154 entries</p>
+      </div>
+
+      <!-- =========================================================
+           GAP RECONSTRUCTION
+           Transcribe a broken tablet on the cuneiform keyboard, mark illegible
+           spots with small/big gaps, then Reconstruct. The engine fills each gap;
+           its Akkadian form is looked up in the dictionary. Swap -> English.
+           Coordinates with innoverse_pipeline_final.py -> POST /api/reconstruct
+           ========================================================= -->
+      <div class="gap-card" id="gapCard">
+        <div class="gap-head">
+          <h3 class="gap-title">&#129513; Gap Reconstruction <span class="gap-engine-status" id="gapEngineStatus" role="status" aria-live="polite"></span></h3>
+          <p class="gap-sub">Transcribe a broken tablet on the cuneiform keyboard below. Add a small or big gap wherever the surface is illegible, then Reconstruct — the AI model fills each gap in Akkadian. Press Swap to read the English translation.</p>
+        </div>
+
+        <!-- judge-facing note: how the engine reconstructs, and how honest it is about it -->
+        <details class="gap-method" id="gapMethod">
+          <summary>How this reconstruction works — and how to read the result</summary>
+          <div class="gap-method-body">
+            <p>Reconstructing a gap is not the same as translating a word that is present. Translation is a dictionary lookup, so it is exact. A gap is a word that is <em>missing</em>, so it has to be inferred. The engine infers it in three layers, and always tells you which layer answered:</p>
+            <ol class="gap-method-layers">
+              <li><span class="gap-badge gap-badge--attested">&#9989; Attested match</span> The fragment matches a real, published tablet line in our corpus. The missing word is taken from that attested parallel and the line is cited as evidence.</li>
+              <li><span class="gap-badge gap-badge--parallel">&#128206; Cited parallel</span> No exact match, but a close attested parallel is retrieved (Old Assyrian and royal texts are highly formulaic). We fill from it and show the parallel with a similarity score.</li>
+              <li><span class="gap-badge gap-badge--model">&#129504; Model estimate</span> No close parallel exists, so the three fine-tuned ByT5 models estimate the word. This is a scholarly guess, shown with its confidence, not a certainty.</li>
+            </ol>
+            <p class="gap-method-note">Every result carries a confidence figure, and reconstructed words are estimates in the tradition of bracketed restorations in an edition. The engine is most accurate on genuine formulaic fragments (try the samples above); a sentence built and then gapped by hand is the hardest case for any model. Attested lines are reused from open Oracc editions under CC BY-SA 3.0 (see the credits).</p>
+          </div>
+        </details>
+
+        <!-- one-click demo + sample gallery (built/populated by js/script.js) -->
+        <div class="gap-demo">
+          <button type="button" class="gap-demo-btn" id="gapDemo">&#9654;&nbsp; Try a broken tablet</button>
+          <span class="gap-demo-or">or pick a sample:</span>
+          <div class="gap-samples" id="gapSamples"></div>
+        </div>
+
+        <div class="gap-toolbar">
+          <button type="button" class="tr-btn gap-ins" id="gapInsSmall" title="Insert a small gap — one missing sign or word">&#11034; small gap</button>
+          <button type="button" class="tr-btn gap-ins" id="gapInsBig" title="Insert a big gap — a longer broken passage">&#11034;&#11034; big gap</button>
+          <span class="gap-spacer"></span>
+          <button type="button" class="tr-btn" id="gapCopy" title="Copy the transliteration of the fragment">&#128203; Copy</button>
+          <button type="button" class="tr-btn" id="gapPaste" title="Paste a fragment (cuneiform or transliteration) from the clipboard">&#128229; Paste</button>
+          <button type="button" class="tr-btn" id="gapExample" title="Load an example broken fragment">Example</button>
+          <button type="button" class="tr-btn" id="gapSwap" title="Swap between the reconstructed Akkadian and its English translation" hidden>&#8646; Swap</button>
+          <button type="button" class="tr-btn" id="gapClear" title="Clear the fragment">&#10005; Clear</button>
+          <button type="button" class="tr-btn tr-btn--ai" id="gapRun" title="Reconstruct the gaps with the AI model (needs the local server: innoverse_pipeline_final.py --serve)">&#129504; Reconstruct</button>
+        </div>
+
+        <div class="tr-field">
+          <span class="tr-flabel">Broken fragment — write in cuneiform</span>
+          <div id="gapCuneBox" class="tr-input tr-cunebox is-empty" tabindex="0" role="textbox" aria-label="Cuneiform fragment input">
+            <span class="tr-cune-line" id="gapCuneLine"></span>
+            <span class="tr-translit-line" id="gapTranslitLine"></span>
+            <span class="tr-cune-ph" id="gapCunePh">Tap the keys to write in cuneiform; add a gap where the tablet is broken…</span>
+          </div>
+          <span class="gap-hint">Tap the keys below to transcribe the tablet. Where it is broken, press <b>small gap</b> or <b>big gap</b>. Backspace (&#9003;) removes the last sign.</span>
+        </div>
+
+        <!-- cuneiform keyboard for the gap tool (built by js/script.js) -->
+        <div class="tr-keyboard" id="gapKeyboard" aria-label="Akkadian cuneiform keyboard"></div>
+
+        <div class="gap-result" id="gapResult" hidden>
+          <div class="gap-res-top">
+            <div class="gap-res-main">
+              <div class="gap-res-head">
+                <span class="gap-res-title" id="gapResTitle">&#129513; Reconstructed Akkadian</span>
+                <span class="gap-res-model" id="gapModel"></span>
+                <button type="button" class="tr-btn tr-btn--speak gap-res-speak" id="gapResSpeak" title="Speak the reconstructed Akkadian (teaching aid)">&#128266; Speak</button>
+                <button type="button" class="tr-btn gap-res-copy" id="gapResCopy" title="Copy the reconstructed text shown here (Akkadian or, after Swap, English)">&#128203; Copy</button>
+              </div>
+              <div class="gap-model-text" id="gapModelText"></div>
+            </div>
+            <div class="gap-gauge" id="gapGauge" hidden></div>
+          </div>
+
+          <!-- voice assistant for the reconstructed line: speak the guessed text -->
+          <div class="tr-speak-controls gap-res-voice">
+            <label class="tr-sc">Voice <select id="gapVoice" aria-label="Speech voice"></select></label>
+            <label class="tr-sc">Speed <input type="range" id="gapRate" min="0.5" max="1.1" step="0.05" value="0.85"></label>
+            <label class="tr-sc"><input type="checkbox" id="gapSyl" checked> syllable-by-syllable</label>
+            <span class="tr-sc tr-sc-note">pronunciation is a reconstructed approximation</span>
+          </div>
+
+          <!-- evidence & method: which layer answered + the cited attested parallel -->
+          <div class="gap-evidence" id="gapEvidence" hidden></div>
+
+          <div class="gap-res-block" id="gapFillsBlock" hidden>
+            <span class="gap-res-sub">Gap by gap — tap an alternative to swap it in</span>
+            <div class="gap-fills" id="gapFills"></div>
+          </div>
+
+          <div class="gap-res-block" id="gapCandidates" hidden></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================================================
+         MY TEAM  (same photo-grid + click-to-open profile as Masters).
+         Grid = photos + red names only; clicking a member opens the
+         #masterOverlay profile sheet. To ADD/replace a member: copy a
+         .master-card block, set the photo, name and the .master-detail
+         text (roles/descriptions are placeholders until provided).
+         ========================================================= -->
+    <div class="detail-panel" id="panel-myteam">
+      <div class="masters-wrap">
+
+        <div class="masters-banner">
+          <div class="mb-orn">&#9670;</div>
+          <h2 class="mb-title">Developer Team</h2>
+          <p class="mb-sub">The people who built this project</p>
+          <div class="mb-orn">&#9670;</div>
+          <p class="mb-lead">The team behind the Encyclopedia of Akkadian Civilization — the people who designed, researched and built this project.</p>
+        </div>
+
+        <p class="masters-hint">Tap a member to read about them and their role.</p>
+
+        <div class="team-lead">
+          <div class="master-card master-card--mentor" role="button" tabindex="0" aria-label="Amir — open profile">
+            <div class="lead-inner">
+              <div class="master-photo-wrap"><img class="master-photo" src="images/Mr%20Amir.jpg" alt="Amir"></div>
+              <div class="lead-info">
+                <span class="master-name">Amir</span>
+                <p class="lead-role">Project Supervisor, Mentor &amp; Teacher</p>
+                <p class="lead-blurb">The academic supervisor, mentor, and teacher behind INNOVERSE — he guided the team throughout the project, shaping its direction, reviewing progress, and advising on both the scholarly and the technical decisions.</p>
+                <span class="lead-more">Tap to read the full profile &rarr;</span>
+              </div>
+            </div>
+            <div class="master-detail" hidden>
+              <div class="md-head">
+                <img class="md-photo" src="images/Mr%20Amir.jpg" alt="Amir">
+                <div class="md-titles">
+                  <h3 class="md-name">Amir</h3>
+                  <p class="md-role">Project Supervisor, Mentor &amp; Teacher</p>
+                </div>
+              </div>
+              <div class="md-bio">
+                <p>Amir is the academic supervisor, mentor, and teacher behind INNOVERSE. He guided the team throughout the project — shaping its direction, reviewing progress, and advising on both the scholarly and the technical decisions.</p>
+                <p>As the project's supervisor and teacher he oversaw the work from the first concept to the final, competition-ready platform, sharing the knowledge, feedback, and encouragement that turned the idea into a finished product.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="masters-grid">
+
+          <div class="master-card" role="button" tabindex="0" aria-label="Danial — open profile">
+            <div class="master-photo-wrap"><img class="master-photo" src="images/Mr%20Danial.jpg" alt="Danial"></div>
+            <span class="master-name">Danial</span>
+            <div class="master-detail" hidden>
+              <div class="md-head">
+                <img class="md-photo" src="images/Mr%20Danial.jpg" alt="Danial">
+                <div class="md-titles">
+                  <h3 class="md-name">Danial</h3>
+                  <p class="md-role">UI/UX, Visual Design &amp; Project Coordination</p>
+                </div>
+              </div>
+              <div class="md-bio">
+                <p>My contribution to the competition focused primarily on UI/UX, visual design, and overall project coordination. I designed and developed the visual identity and interactive experience of INNOVERSE, coordinated the different sections and technical components into one coherent platform, and transformed complex features such as the Akkadian translation system and AI backend into intuitive, interactive user experiences.</p>
+                <p>I also worked on frontend–backend integration, interaction design, animations, navigation, and final interface refinement to make the project presentation clear, consistent, and competition-ready.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="master-card" role="button" tabindex="0" aria-label="Sara — open profile">
+            <div class="master-photo-wrap"><img class="master-photo" src="images/Ms%20Sara.jpg" alt="Sara"></div>
+            <span class="master-name">Sara</span>
+            <div class="master-detail" hidden>
+              <div class="md-head">
+                <img class="md-photo" src="images/Ms%20Sara.jpg" alt="Sara">
+                <div class="md-titles">
+                  <h3 class="md-name">Sara</h3>
+                  <p class="md-role">Knowledge-Graph Visualizations &amp; Documentation</p>
+                </div>
+              </div>
+              <div class="md-bio">
+                <p>Developed the project's interactive knowledge-graph visualizations, including the co-occurrence, temporal, and multi-layer archaeological graphs.</p>
+                <p>Improved the notebook by organizing the code, removing unnecessary sections, and adding comments to make it easier to follow. She also helped prepare the project documentation, including the README and repository structure.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="master-card" role="button" tabindex="0" aria-label="Sepehr — open profile">
+            <div class="master-photo-wrap"><img class="master-photo" src="images/Mr%20Sepehr.jpg" alt="Sepehr"></div>
+            <span class="master-name">Sepehr</span>
+            <div class="master-detail" hidden>
+              <div class="md-head">
+                <img class="md-photo" src="images/Mr%20Sepehr.jpg" alt="Sepehr">
+                <div class="md-titles">
+                  <h3 class="md-name">Sepehr</h3>
+                  <p class="md-role">Technical Collaboration &amp; Integration</p>
+                </div>
+              </div>
+              <div class="md-bio">
+                <p>His contribution was primarily collaborative and technical: acting as a bridge between team members, advising on implementation decisions, helping resolve development issues, and ensuring that the different parts of the project worked together as a coherent final product.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="detail-panel" id="panel-territory">
+      <h2>Map of the Akkadian Empire at Its Height</h2>
+
+      <!-- MAIN MAP IMAGE — file lives at images/IRT2.jpg.  
+           To swap it, change the src below and drop your file into images/. -->
+      <figure class="akkad-fig map-fig">
+        <img src="images/IRT2.jpg"
+             alt="Map of the Akkadian Empire at its height"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="map-missing" style="display:none;">
+          Save your map image as <code>images/IRT2.jpg</code> to display it here.
+        </div>
+        <figcaption>The Akkadian Empire and the Sumerian city-states it grew out of, c.&nbsp;4300&ndash;2335&nbsp;BCE.</figcaption>
+      </figure>
+
+      <div class="detail-text">
+        <p>The Akkadian Empire (c. 2334&ndash;2218 BCE), founded by Sargon of Akkad (reign c. 2334&ndash;2279 BCE), is widely regarded as the first territorial empire in recorded history. Emerging from the political landscape of Sumerian city-states, Sargon established control over key urban centers such as Kish, Uruk, and Ur, creating a centralized system of governance supported by military garrisons and administrative officials. Under his successors, particularly Naram-Sin (reign c. 2254&ndash;2218 BCE), the empire expanded further, reaching from the Persian Gulf to the Mediterranean, and projecting power into Upper Mesopotamia, the Zagros highlands, and the Levant. This expansion relied less on fixed borders than on a network of strategic cities, tributary regions, and campaign routes.</p>
+        <p>Akkadian royal ideology expressed this expansion through the concept of the &ldquo;four quarters of the world&rdquo; (kibr&#257;t erbetti), dividing the known world into Sumer (south), Subartu (north), Elam (east), and Amurru (west). These were not administrative divisions but symbolic directions of universal rule centered on Akkad. Despite its achievements, the Akkadian state faced internal pressures and external challenges, including incursions by highland groups such as the Gutians and Elamites (c. 22nd century BCE), contributing to its eventual decline.</p>
+
+        <h3>The Precise Location of the Akkadian Realm</h3>
+        <p>The heartland of the empire lay in central and southern Mesopotamia &mdash; the flood plain between the Tigris and the Euphrates, in what is today central and southern Iraq. From this core the Akkadians absorbed the older Sumerian cities of the south, such as Ur, Uruk, Lagash, and Nippur, and at their height projected authority outward into Upper Mesopotamia, the Zagros highlands of western Iran, and the trade corridors that ran toward the Mediterranean. Territory once ruled or dominated from Akkad now falls across the modern states of Iraq, Syria, south-eastern Turkey, western Iran, and Kuwait.</p>
+        <p>The one place that still cannot be fixed on the map is the capital itself. Despite more than a century of searching, the city of Akkad (Agade) has never been located. Ancient records place it in the central plain near Kish, Babylon, and Eshnunna, close to the Tigris and the Diyala &mdash; most likely within roughly 30&nbsp;km of modern Baghdad. Sites such as Ishan Mizyad near Kish, and Tell Muhammad in the south-eastern outskirts of Baghdad, have been proposed as candidates, and recent studies using satellite imagery and GIS models of the ancient canal network point to the Diyala&ndash;Tigris confluence. For now, the seat of the world&rsquo;s first empire remains one of the great unsolved problems of Mesopotamian geography.</p>
+      </div>
+
+      <!-- SECONDARY MAP (detailed city / trade-route map) — file: images/IRT.jpg -->
+      <figure class="akkad-fig">
+        <img src="images/IRT.jpg"
+             alt="Detailed map of Sumer and Akkad showing city locations and trade routes"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="map-missing" style="display:none;">
+          Save your second map as <code>images/IRT.jpg</code> to display it here.
+        </div>
+        <figcaption>The cities and trade routes of southern Mesopotamia. Akkad&rsquo;s capital lay somewhere in the central plain shown here, near Kish and the Tigris&ndash;Diyala confluence &mdash; though its exact site is still unidentified.</figcaption>
+      </figure>
+    </div>
+
+    <!-- =========================================================
+         MASTERS OF AKKADIAN  (accordion detail panel — opens from the
+         "Masters of Akkadian" strip above). Grid = photos + red names
+         only; clicking a scholar fades the page and opens a full profile
+         sheet (#masterOverlay), closed with ✕/Esc/background.
+         To ADD a master: copy a .master-card block (images/02–04.jpg ready).
+         ========================================================= -->
+    <div class="detail-panel" id="panel-masters">
+      <div class="masters-wrap">
+
+        <div class="masters-banner">
+          <div class="mb-orn">&#9670;</div>
+          <h2 class="mb-title">Masters of Akkadian</h2>
+          <p class="mb-sub">The scholars who deciphered an ancient empire</p>
+          <div class="mb-orn">&#9670;</div>
+          <p class="mb-lead">With passion, knowledge, and a love for history, these distinguished scholars dedicated their lives to understanding the Akkadian language and preserving the legacy of one of the world's greatest civilizations.</p>
+        </div>
+
+        <div class="masters-cats">
+          <div class="mc"><b>Akkadian Translation</b><span>Translating ancient texts with precision, dedication and deep linguistic understanding.</span></div>
+          <div class="mc"><b>Research &amp; Scholarship</b><span>In-depth analysis, comparison and interpretation of cuneiform sources and historical records.</span></div>
+          <div class="mc"><b>Historical Preservation</b><span>Preserving the cultural, political and social heritage of the Akkadian Empire.</span></div>
+          <div class="mc"><b>Inspiring Generations</b><span>Passing knowledge to future scholars and keeping the legacy of Akkadian civilization alive.</span></div>
+        </div>
+
+        <p class="masters-hint">Tap a scholar to read about their life and work.</p>
+        <div class="masters-grid">
+
+          <div class="master-card" role="button" tabindex="0" aria-label="George Smith — open profile">
+            <div class="master-photo-wrap"><img class="master-photo" src="images/01.jpg" alt="Portrait of George Smith"></div>
+            <span class="master-name">George Smith</span>
+            <div class="master-detail" hidden>
+              <div class="md-head">
+                <img class="md-photo" src="images/01.jpg" alt="Portrait of George Smith">
+                <div class="md-titles">
+                  <h3 class="md-name">George Smith</h3>
+                  <p class="md-role">Assyriologist · 1840–1876 · London &amp; Nineveh</p>
+                  <div class="md-tags"><span>Flood Tablet</span><span>Epic of Gilgamesh</span><span>British Museum</span></div>
+                </div>
+              </div>
+              <div class="md-bio">
+                <p>George Smith (1840–1876) was a British Assyriologist who rose from a working-class London background to become one of the founders of the field. Apprenticed at fourteen as a banknote engraver, he taught himself to read cuneiform by spending his lunch hours among the tablets of the British Museum. His talent was noticed by the Egyptologist Samuel Birch and the pioneering decipherer Sir Henry Rawlinson, and in 1870 he was appointed to the Museum's Assyriology department.</p>
+                <p>In 1872 Smith made the discovery that made him famous: while sorting fragments from the library of Nineveh he recognised a Babylonian account of a great flood — the eleventh tablet of the <i>Epic of Gilgamesh</i> — with striking parallels to the story of Noah. His lecture to the Society of Biblical Archaeology on 3 December 1872, whose audience included Prime Minister Gladstone, caused a public sensation. When it emerged that part of the text was missing, <i>The Daily Telegraph</i> funded him to excavate at Nineveh, where he recovered further fragments; the British Museum sent him back the following year.</p>
+                <p>He published widely, including <i>Annals of Assur-bani-pal</i> (1871), <i>Assyrian Discoveries</i> (1875) and <i>The Chaldean Account of Genesis</i>. On a third expedition he fell ill and died of dysentery at Aleppo in 1876, aged only thirty-six. His work opened the literature of ancient Mesopotamia to the modern world and helped turn Assyriology into a science.</p>
+              </div>
+              <p class="md-src">Biography written for this site; facts drawn from the “George Smith (Assyriologist)” article on Wikipedia (CC&nbsp;BY-SA).</p>
+            </div>
+          </div>
+
+          <div class="master-card" role="button" tabindex="0" aria-label="Julius Oppert — open profile">
+            <div class="master-photo-wrap"><img class="master-photo" src="images/02.jpg" alt="Portrait of Julius Oppert"></div>
+            <span class="master-name">Julius Oppert</span>
+            <div class="master-detail" hidden>
+              <div class="md-head">
+                <img class="md-photo" src="images/02.jpg" alt="Portrait of Julius Oppert">
+                <div class="md-titles">
+                  <h3 class="md-name">Julius Oppert</h3>
+                  <p class="md-role">Assyriologist · 1825–1905 · Germany &amp; France</p>
+                  <div class="md-tags"><span>Named “Sumerian”</span><span>Cuneiform decipherment</span><span>Collège de France</span></div>
+                </div>
+              </div>
+              <div class="md-bio">
+                <p>Julius Oppert (1825–1905) was a German-born scholar who became one of France's leading Assyriologists. Educated at Heidelberg, Bonn and Berlin, he settled in France and took French citizenship, and between 1851 and 1854 he joined Fulgence Fresnel's scientific mission to Mesopotamia, gathering and copying cuneiform inscriptions around Babylon.</p>
+                <p>Oppert was among the first to show that cuneiform writing had been invented not by a Semitic people but by an earlier civilisation — and it was he who established the name <i>Sumerian</i> for their language. From 1869 he held the chair of Assyrian philology and archaeology at the Collège de France, and later presided over the Académie des Inscriptions.</p>
+                <p>His grammars and studies of Assyro-Babylonian chronology — among them <i>Chronologie des Assyriens et des Babyloniens</i> (1856) and <i>Éléments de la grammaire assyrienne</i> (1868) — helped turn the young field into a rigorous discipline.</p>
+              </div>
+              <p class="md-src">Biography written for this site; facts drawn from the “Julius Oppert” article on Wikipedia (CC&nbsp;BY-SA).</p>
+            </div>
+          </div>
+
+          <div class="master-card" role="button" tabindex="0" aria-label="Henry Rawlinson — open profile">
+            <div class="master-photo-wrap"><img class="master-photo" src="images/03.jpg" alt="Portrait of Sir Henry Rawlinson"></div>
+            <span class="master-name">Henry Rawlinson</span>
+            <div class="master-detail" hidden>
+              <div class="md-head">
+                <img class="md-photo" src="images/03.jpg" alt="Portrait of Sir Henry Rawlinson">
+                <div class="md-titles">
+                  <h3 class="md-name">Sir Henry Rawlinson</h3>
+                  <p class="md-role">Orientalist · 1810–1895 · England &amp; Persia</p>
+                  <div class="md-tags"><span>Behistun Inscription</span><span>Father of Assyriology</span><span>British Museum</span></div>
+                </div>
+              </div>
+              <div class="md-bio">
+                <p>Sir Henry Creswicke Rawlinson (1810–1895) is often called the father of Assyriology. A British East India Company officer and diplomat, he was posted to Persia in 1827 and later served at Kandahar and Baghdad.</p>
+                <p>Near Kermanshah he spent years, from the late 1830s, copying the great trilingual Behistun Inscription that Darius the Great had carved high on a cliff — work he carried out at real personal risk, scaling ladders and rock faces. From its Old Persian text he worked out the script, then helped decipher the Elamite and Babylonian versions, showing that a single cuneiform sign could stand for different sounds depending on context. His transcription, published between 1846 and 1851, opened the Akkadian language to modern scholarship.</p>
+                <p>Rawlinson was a Fellow of the Royal Society, a Member of Parliament and a trustee of the British Museum, and was made a baronet in 1891.</p>
+              </div>
+              <p class="md-src">Biography written for this site; facts drawn from the “Henry Rawlinson, 1st Baronet” article on Wikipedia (CC&nbsp;BY-SA).</p>
+            </div>
+          </div>
+
+          <div class="master-card" role="button" tabindex="0" aria-label="Abdul Majid Arfaei — open profile">
+            <div class="master-photo-wrap"><img class="master-photo" src="images/04.jpg" alt="Portrait of Abdul Majid Arfaei"></div>
+            <span class="master-name">Abdul Majid Arfaei</span>
+            <div class="master-detail" hidden>
+              <div class="md-head">
+                <img class="md-photo" src="images/04.jpg" alt="Portrait of Abdul Majid Arfaei">
+                <div class="md-titles">
+                  <h3 class="md-name">Abdul Majid Arfaei</h3>
+                  <p class="md-role">Assyriologist &amp; Elamologist · b. 1939 · Iran</p>
+                  <div class="md-tags"><span>Elamite</span><span>Persepolis Tablets</span><span>Cyrus Cylinder</span></div>
+                </div>
+              </div>
+              <div class="md-bio">
+                <p>Abdul Majid Arfaei (born 1939 in Bandar Abbas) is among the foremost modern Iranian scholars of the ancient Near East, and one of very few specialists able to read both Elamite and Akkadian.</p>
+                <p>Trained at the Oriental Institute of the University of Chicago, he devoted much of his career to the Persepolis Fortification Tablets — the vast Elamite administrative archive of the Achaemenid empire — translating hundreds of the clay documents from the age of Darius the Great.</p>
+                <p>He was the first to render the Cyrus Cylinder directly from its Akkadian original into Persian, and he founded the inscriptions hall of Iran's National Museum. His work has brought the languages and records of ancient Iran and Mesopotamia to Persian readers.</p>
+              </div>
+              <p class="md-src">Biography written for this site; facts drawn from the “Abdul Majid Arfaei” article on Wikipedia (CC&nbsp;BY-SA).</p>
+            </div>
+          </div>
+
+          <!-- ADD MORE MASTERS HERE: copy a .master-card block above and change the photo, name and .master-detail text. -->
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- full-screen profile sheet (populated on click, fades in/out) -->
+  <div class="master-overlay" id="masterOverlay" hidden>
+    <div class="master-overlay-panel">
+      <button type="button" class="master-overlay-close" aria-label="Close">&#10005;</button>
+      <div class="master-overlay-body" id="masterOverlayBody"></div>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       NAV SECTIONS (About / AI Engine / Support Us)
+       Hidden by default; revealed + scrolled to when their top-nav
+       item is clicked (see js/script.js). Home reloads the page.
+       ========================================================= -->
+
+  <!-- ABOUT -->
+  <section id="about" class="nav-section container" aria-label="About this site">
+    <h2>About This Encyclopedia</h2>
+    <p class="ns-lead"><b>Encyclopedia of the History of Akkadian Civilization</b> is an interactive resource devoted to Akkad — the world's first multinational empire. It brings together an illustrated history, maps of the empire, a working Akkadian&nbsp;&harr;&nbsp;English dictionary with an on-screen cuneiform keyboard, a teaching voice assistant, an AI engine that reconstructs broken tablets and cites the real tablet lines it draws on, and profiles of the scholars who deciphered the language — all in one place. Everything is built from freely-licensed data and original text so it can be shared and extended.</p>
+    <!-- NOVELTY — the one-line "what is new", kept up front -->
+    <p class="ns-novelty"><span class="ns-novelty-tag">What&rsquo;s new</span> Most tools simply guess a broken tablet. INNOVERSE fills the gap from a <b>real, attested tablet line and cites it</b>, and labels every reading by how sure it is. Evidence-based reconstruction, not a blind guess.</p>
+
+    <!-- IMPACT — the real-world "why it matters", kept prominent above the cards -->
+    <div class="about-impact" aria-label="Why this project matters">
+      <h3 class="about-impact-title">&#127757; Why it matters</h3>
+      <div class="about-impact-grid">
+        <div class="impact-point">
+          <h4>&#127963; Cultural heritage</h4>
+          <p>Hundreds of thousands of cuneiform tablets survive broken and largely unread. Reconstructing and translating them helps preserve a 4,000-year-old written heritage before it is lost.</p>
+        </div>
+        <div class="impact-point">
+          <h4>&#127891; Education &amp; access</h4>
+          <p>Reading Akkadian today takes years of specialist training. A cited, interactive translator opens these texts to students, teachers and the public.</p>
+        </div>
+        <div class="impact-point">
+          <h4>&#129504; AI for low-resource languages</h4>
+          <p>Akkadian has almost no digital data next to English. The same approach — a fine-tuned model soup with retrieval grounding and honest confidence — transfers to any endangered or low-resource language.</p>
+        </div>
+      </div>
+      <p class="about-impact-note">Akkadian is our proof of concept; the method is a template for bringing modern NLP to the languages that data-hungry models usually ignore.</p>
+    </div>
+
+    <p class="about-hint">Tap any card for more detail.</p>
+
+    <div class="about-grid">
+
+      <div class="about-card" role="button" tabindex="0" aria-label="Akkadian History — more detail">
+        <h3>📜 Akkadian History</h3>
+        <p>A full illustrated article on Akkad and the Akkadian Empire — the rise of Sargon the Great, Naram-Sin at the empire's height, its decline and legacy — with artifact photographs and a timeline.</p>
+        <span class="about-more">Read more →</span>
+        <div class="master-detail" hidden>
+          <h3 class="md-name">📜 Akkadian History</h3>
+          <div class="md-bio">
+            <p>The history slide opens a full illustrated article on Akkad and the Akkadian Empire: the rise of Sargon the Great and his new model of centralised, multi-ethnic rule; the empire at its height under Naram-Sin, who styled himself a god; and its decline under pressure from the Gutians and other groups.</p>
+            <p>The article is illustrated with photographs of real artifacts — the bronze royal head from Nineveh, the Victory Stele of Naram-Sin, the Standard of Ur and the Disk of Enheduanna — alongside a short timeline, all drawn from freely-licensed sources.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-card" role="button" tabindex="0" aria-label="Map and Territory — more detail">
+        <h3>🗺️ Map &amp; Territory</h3>
+        <p>Maps of the empire's reach from the Persian Gulf to the Mediterranean, with a discussion of the still-unidentified location of the capital, Akkad (Agade).</p>
+        <span class="about-more">Read more →</span>
+        <div class="master-detail" hidden>
+          <h3 class="md-name">🗺️ Map &amp; Territory</h3>
+          <div class="md-bio">
+            <p>Two maps show how far Akkad reached: a wide view of the empire at its height, stretching from the Persian Gulf to the Mediterranean, and a closer map of the Sumerian cities and trade routes it grew out of.</p>
+            <p>The accompanying text explains that the empire relied less on fixed borders than on a network of cities, tributary regions and campaign routes — and that the capital itself, Akkad (Agade), has never been located, most likely lying in the central plain near the Tigris–Diyala confluence.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-card" role="button" tabindex="0" aria-label="Translation — more detail">
+        <h3>🔤 Translation</h3>
+        <p>An Akkadian&nbsp;&harr;&nbsp;English dictionary of 11,154 entries with a cuneiform keyboard, live two-way lookup, fuzzy matching and word-by-word phrases.</p>
+        <span class="about-more">Read more →</span>
+        <div class="master-detail" hidden>
+          <h3 class="md-name">🔤 Translation</h3>
+          <div class="md-bio">
+            <p>The translator is a two-way Akkadian ↔ English dictionary of 11,154 entries from Oracc and OGSL. You can write with an on-screen cuneiform keyboard or paste transliteration, and it looks up meanings live, with fuzzy matching and word-by-word translation for whole phrases.</p>
+            <p>Swap is lossless — it remembers your original text — and cuneiform is shown for almost every entry: authentic where the data provides it, otherwise generated from the transliteration.</p>
+            <p>After a phrase is processed it also marks the <strong>grammatical role</strong> of every word — highlighting the <strong>verb</strong> (which in Akkadian carries its own subject, in person and number) and flagging the <strong>subject</strong> pronoun — so you can read the structure of the sentence, not just the words.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-card" role="button" tabindex="0" aria-label="Voice Assistant — more detail">
+        <h3>🔊 Voice Assistant</h3>
+        <p>A teaching aid that pronounces Akkadian syllable-by-syllable and highlights each cuneiform sign in red as it is spoken, with adjustable voice and speed — and it reads back the reconstructed line in the Gap tool too.</p>
+        <span class="about-more">Read more →</span>
+        <div class="master-detail" hidden>
+          <h3 class="md-name">🔊 Voice Assistant</h3>
+          <div class="md-bio">
+            <p>The voice assistant reads Akkadian aloud syllable-by-syllable, highlighting each cuneiform sign in red as it is spoken, with adjustable voice and speed. In the Gap Reconstruction tool it sits beside the result and speaks the reconstructed line — the guessed text, not just what you typed.</p>
+            <p>Because no recording of spoken Akkadian survives, the pronunciation is a scholarly reconstructed approximation, offered as a teaching aid rather than a definitive reading.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-card" role="button" tabindex="0" aria-label="AI Engine — more detail">
+        <h3>🧠 AI Engine</h3>
+        <p>A reconstruction engine that rebuilds broken tablets — filling gaps, re-ranking candidates, scoring its own confidence, and <strong>grounding each reading in real attested tablet lines it can cite</strong> — mapped node-by-node in the AI Engine tab.</p>
+        <span class="about-more">Read more →</span>
+        <div class="master-detail" hidden>
+          <h3 class="md-name">🧠 AI Engine</h3>
+          <div class="md-bio">
+            <p>Behind the translator is a reconstruction engine — a fine-tuned ByT5 model soup — that rebuilds broken tablets: it fills gaps, re-ranks candidates for fluency and consensus, filters out unsupported guesses, and scores its own confidence, then serves the result over a small JSON API.</p>
+            <p>The AI Engine tab maps every subsystem of this ~3,000-line pipeline as an interactive graph, where each node reveals its role, inputs/outputs and real source code.</p>
+            <p>Each reconstruction is <strong>re-sampled</strong>, so you can re-roll the same broken tablet for a different plausible reading, and every gap is filled from the model's own words aligned by position — a distinct, sensible Akkadian word per gap rather than one repeated guess.</p>
+            <p>Crucially, it is <strong>evidence-based</strong>: the engine retrieves the closest real, published tablet line from a curated corpus and, when a fragment matches, fills the gap from that attested parallel and <strong>cites it</strong>. Every result is labelled by source — attested match, cited parallel, or model estimate — so a gap is never shown as more certain than it is. Its English meaning is read straight from the dictionary, so it stays consistent with the translator.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-card" role="button" tabindex="0" aria-label="Masters of Akkadian — more detail">
+        <h3>👤 Masters of Akkadian</h3>
+        <p>Profiles of the scholars who deciphered Akkadian — from George Smith and Henry Rawlinson to Abdul Majid Arfaei.</p>
+        <span class="about-more">Read more →</span>
+        <div class="master-detail" hidden>
+          <h3 class="md-name">👤 Masters of Akkadian</h3>
+          <div class="md-bio">
+            <p>The Masters of Akkadian panel honours the scholars who made all of this possible — the people who deciphered the language over the last two centuries, from George Smith, Julius Oppert and Sir Henry Rawlinson to Abdul Majid Arfaei.</p>
+            <p>Each portrait opens a short profile of the scholar's life and their contribution to reading the world's oldest written records.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="ns-note">All content is built from freely-licensed sources — dictionary and sign data from Oracc and OGSL (CC&nbsp;BY-SA), artwork from Wikimedia Commons, and original text — so it can be shared and extended.</p>
+  </section>
+
+  <!-- AI ENGINE -->
+  <section id="ai-engine" class="nav-section container" aria-label="AI engine">
+    <h2>AI Engine — What the Code Actually Does</h2>
+    <p class="ns-lead">A live, clickable map of the whole system. The default view is the <b>backend brain</b> (<code>innoverse_pipeline_final.py</code>) — the real reconstruction engine; switch to the <b>frontend tool</b> to see the on-page translator. Each <span class="lg-hub">red hub</span> is a subsystem; the <span class="lg-leaf">green nodes</span> are its functions — the closer to the centre, the heavier its role. <b>Hover</b> a node for what it is; <b>click</b> it for its role, inputs/outputs and the actual code. Drag nodes to explore.</p>
+
+    <div class="aieng-toggle" role="tablist" aria-label="Which part of the code to map">
+      <button type="button" class="aieng-tab is-on" data-graph="engine">&#129504; AI Engine (backend)</button>
+      <button type="button" class="aieng-tab" data-graph="frontend">&#128421; Translate tool (frontend)</button>
+    </div>
+
+    <!-- graphs mount here (main graph + meta-graph on double-click) -->
+    <div class="ai-graph-stack" id="aiGraphStack"></div>
+    <p class="ai-graph-hint">Scroll to <b>zoom</b>, drag the background to <b>pan</b>, and <b>double-click the background</b> to open the meta-graph — the graph that explains this graph.</p>
+
+    <!-- =========================================================
+         CAPABILITY CATALOG — every backend subsystem, in text, so it
+         can be read precisely without exploring the graph.
+         ========================================================= -->
+    <div class="aieng-caps">
+      <h3>Everything the engine does — <span>innoverse_pipeline_final.py</span></h3>
+      <p class="aieng-caps-lead">Akkadian transliteration (with broken <code>&lt;gap&gt;</code> spots) &rarr; a fine-tuned <b>ByT5 model soup</b> &rarr; re-ranking, gap-fill, attested-corpus grounding, hallucination filtering and confidence scoring &rarr; a JSON API. ~3,000 lines · <b>54/54 tests</b>.</p>
+      <div class="cap-grid">
+        <div class="cap-card"><h4>&#129520; Model Soup &amp; Inference</h4><p>Weight-averages 3 same-architecture ByT5-base checkpoints into one model, then decodes on CPU &mdash; beam search, or nucleus sampling (re-rolled each call) for the gap reconstructor.</p><div class="cap-fns"><button type="button" class="cap-fn" data-fn="build_model_soup">build_model_soup</button><button type="button" class="cap-fn" data-fn="run_inference">run_inference</button><button type="button" class="cap-fn" data-fn="ensemble_topk">ensemble_topk</button></div></div>
+        <div class="cap-card"><h4>&#127919; MBR Decoding &amp; Re-rank</h4><p>Picks the best beam by consensus (Minimum Bayes Risk) + a blend of LM fluency, English consistency and back-translation.</p><div class="cap-fns"><button type="button" class="cap-fn" data-fn="mbr_select">mbr_select</button><button type="button" class="cap-fn" data-fn="select_best">select_best</button><button type="button" class="cap-fn" data-fn="NgramLM">NgramLM</button></div></div>
+        <div class="cap-card"><h4>&#128269; RAG — Parallel Retrieval</h4><p>Retrieves the closest attested parallel from a curated corpus of real, published tablet formulae (CC BY-SA) to <b>ground and cite</b> the gap reconstruction — so a genuine formulaic fragment is matched to a real attested line, not just guessed.</p><div class="cap-fns"><button type="button" class="cap-fn" data-fn="ParallelIndex">ParallelIndex</button><button type="button" class="cap-fn" data-fn="build_parallel_index">build_parallel_index</button><button type="button" class="cap-fn" data-fn="load_attested_parallels">load_attested_parallels</button><button type="button" class="cap-fn" data-fn="build_attested_index">build_attested_index</button></div></div>
+        <div class="cap-card"><h4>&#128218; Translation Memory &amp; Lexicon</h4><p>Exact recall of previously-seen fragments and correct spelling of proper names (Kanesh, Assur) from the lexicon.</p><div class="cap-fns"><button type="button" class="cap-fn" data-fn="build_translation_memory">build_translation_memory</button><button type="button" class="cap-fn" data-fn="lexicon_name_normalize">lexicon_name_normalize</button></div></div>
+        <div class="cap-card"><h4>&#129513; Gap Reconstruction</h4><p>Normalises broken markers to <code>&lt;gap&gt;</code>/<code>&lt;big_gap&gt;</code>, re-samples the model each call and keeps the most coherent reading, then fills each gap from the model&rsquo;s own content words (aligned by position). It also grounds the fragment in the attested corpus and <b>labels every result by source</b> — attested match, cited parallel, or model estimate — so a gap is never shown as more certain than it is.</p><div class="cap-fns"><button type="button" class="cap-fn" data-fn="replace_gaps">replace_gaps</button><button type="button" class="cap-fn" data-fn="reconstruct_gaps_english">reconstruct_gaps_english</button><button type="button" class="cap-fn" data-fn="reconstruct_fragment">reconstruct_fragment</button><button type="button" class="cap-fn" data-fn="_attested_grounding">_attested_grounding</button><button type="button" class="cap-fn" data-fn="_pick_coherent">_pick_coherent</button><button type="button" class="cap-fn" data-fn="_content_words">_content_words</button></div></div>
+        <div class="cap-card"><h4>&#128737; Hallucination Filter</h4><p>Flags/limits over-reconstruction unsupported by the source — invented entities, over-expansion, repetition, weak linkage.</p><div class="cap-fns"><button type="button" class="cap-fn" data-fn="archaeological_filter">archaeological_filter</button><button type="button" class="cap-fn" data-fn="archaeological_hallucination_risk">archaeological_hallucination_risk</button></div></div>
+        <div class="cap-card"><h4>&#129529; Post-processing</h4><p>The per-sample chain wiring every stage together, plus text cleanup, grammar and agent/action/domain notes.</p><div class="cap-fns"><button type="button" class="cap-fn" data-fn="postprocess_row">postprocess_row</button><button type="button" class="cap-fn" data-fn="basic_normalize">basic_normalize</button><button type="button" class="cap-fn" data-fn="extract_semantic_relationship">extract_semantic_relationship</button></div></div>
+        <div class="cap-card"><h4>&#128202; Confidence Analytics</h4><p>Bootstrap CI, beam stability/agreement and calibration &rarr; a 0-100 index, a letter grade, a risk band and a review decision.</p><div class="cap-fns"><button type="button" class="cap-fn" data-fn="final_confidence_index">final_confidence_index</button><button type="button" class="cap-fn" data-fn="confidence_grade">confidence_grade</button><button type="button" class="cap-fn" data-fn="risk_level">risk_level</button><button type="button" class="cap-fn" data-fn="review_decision">review_decision</button></div></div>
+        <div class="cap-card"><h4>&#128207; Evaluation &amp; Metrics</h4><p>chrF quality scoring, component ablation, and calibration (does confidence track quality?).</p><div class="cap-fns"><button type="button" class="cap-fn" data-fn="sentence_chrf">sentence_chrf</button><button type="button" class="cap-fn" data-fn="evaluate_ablation">evaluate_ablation</button><button type="button" class="cap-fn" data-fn="calibration_report">calibration_report</button></div></div>
+        <div class="cap-card"><h4>&#128196; Reports &amp; Outputs</h4><p>Interactive Plotly chart, a Markdown explainability report, a one-page HTML and the CSV outputs.</p><div class="cap-fns"><button type="button" class="cap-fn" data-fn="make_confidence_plot">make_confidence_plot</button><button type="button" class="cap-fn" data-fn="write_markdown_report">write_markdown_report</button><button type="button" class="cap-fn" data-fn="generate_report">generate_report</button></div></div>
+        <div class="cap-card"><h4>&#9889; Cache</h4><p>Caches the soup and lexical resources keyed by an input signature, so the second run starts fast.</p><div class="cap-fns"><button type="button" class="cap-fn" data-fn="load_or_build_soup">load_or_build_soup</button><button type="button" class="cap-fn" data-fn="load_or_build_resources">load_or_build_resources</button></div></div>
+        <div class="cap-card"><h4>&#128220; Cuneiform &amp; Knowledge Graph</h4><p>Renders cuneiform from transliteration/English and builds entity + timeline graphs from a reconstruction.</p><div class="cap-fns"><button type="button" class="cap-fn" data-fn="transliteration_to_cuneiform">transliteration_to_cuneiform</button><button type="button" class="cap-fn" data-fn="english_to_cuneiform">english_to_cuneiform</button><button type="button" class="cap-fn" data-fn="build_temporal_graph">build_temporal_graph</button></div></div>
+        <div class="cap-card"><h4>&#127760; Web Server / API</h4><p>Threaded HTTP server with CORS. <code>GET /api/health</code>, <code>POST /api/reconstruct · /api/cuneiform · /api/graph</code>.</p><div class="cap-fns"><button type="button" class="cap-fn" data-fn="serve">serve</button><button type="button" class="cap-fn" data-fn="_make_handler">_make_handler</button></div></div>
+        <div class="cap-card"><h4>&#9989; Testing &amp; CLI</h4><p>54 self-running unit tests, an end-to-end selftest on a tiny model, and the full command-line interface.</p><div class="cap-fns"><button type="button" class="cap-fn" data-fn="run_tests">run_tests</button><button type="button" class="cap-fn" data-fn="run_selftest">run_selftest</button><button type="button" class="cap-fn" data-fn="parse_args">parse_args</button></div></div>
+      </div>
+    </div>
+
+    <!-- =========================================================
+         SCORECARD TABLES — metrics, real examples, pipeline index
+         ========================================================= -->
+    <div class="aieng-tables">
+
+      <h3>&#128202; Project at a glance</h3>
+      <div class="aieng-table-wrap">
+        <table class="aieng-table aieng-metrics">
+          <tbody>
+            <tr><th>Models</th><td>3 fine-tuned ByT5-base checkpoints, merged into one model soup</td></tr>
+            <tr><th>Parameters</th><td>about 582M per checkpoint (about 2.33&nbsp;GB each)</td></tr>
+            <tr><th>Dictionary</th><td>11,154 Akkadian&nbsp;&harr;&nbsp;English entries (Oracc + OGSL)</td></tr>
+            <tr><th>Attested corpus</th><td>Curated real tablet formulae for evidence-based, cited gap reconstruction (CC BY-SA)</td></tr>
+            <tr><th>Cuneiform signs</th><td>330, for generating script from transliteration</td></tr>
+            <tr><th>Engine</th><td>about 3,000 lines of Python, 54/54 tests passing</td></tr>
+            <tr><th>Runs on</th><td>CPU only, about 7 to 9&nbsp;GB of RAM</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>&#129513; Example readings from the engine</h3>
+      <p class="aieng-table-note">Each time you press Reconstruct the engine draws a fresh reading, so you re-roll for the best one. When a fragment matches a real attested formula, the engine grounds the reading in that line and cites it; otherwise it labels the reading a model estimate. These are readings it produced on the fragments shown; try them yourself in the Gap Reconstruction card.</p>
+      <div class="aieng-table-wrap">
+        <table class="aieng-table aieng-examples">
+          <thead><tr><th>Broken fragment</th><th>Reading</th><th>Confidence</th></tr></thead>
+          <tbody>
+            <tr><td><code>a-na &#11034; qi-bi-ma</code></td><td>Speak to my lord <span class="gap-tag">cited: a-na be-li-ia qi-bi-ma</span></td><td><span class="conf conf-hi">attested</span></td></tr>
+            <tr><td><code>1 ma-na kaspum a-na Ka-ni-is</code></td><td>1 mina of refined silver to Kanesh</td><td><span class="conf conf-hi">95%</span></td></tr>
+            <tr><td><code>2 ma-na kaspum &#11034; a-na Ka-ni-is</code></td><td>2 minas of refined silver to Kanesh</td><td><span class="conf conf-mid">82%</span></td></tr>
+            <tr><td><code>1 ma-na kaspum a-na &#11034;</code></td><td>1 mina of refined silver to&nbsp;&hellip;</td><td><span class="conf conf-mid">82%</span></td></tr>
+            <tr><td><code>a-na Ka-ni-is &#11034; kaspum a-na &#11034;&#11034; id-di-in &#11034; a-na-kam</code></td><td>He has given me &hellip; to Kanesh, and the wool to &hellip; here <span class="gap-tag">3 gaps</span></td><td><span class="conf conf-mid">82%</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>&#129520; The pipeline, stage by stage</h3>
+      <div class="aieng-table-wrap">
+        <table class="aieng-table aieng-pipeline">
+          <thead><tr><th>Subsystem</th><th>What it does</th></tr></thead>
+          <tbody>
+            <tr><td>Model soup &amp; inference</td><td>Averages three ByT5 checkpoints into one model; beam search or sampling.</td></tr>
+            <tr><td>MBR decoding &amp; re-rank</td><td>Picks the consensus hypothesis, blended with fluency and back-translation.</td></tr>
+            <tr><td>Parallel retrieval (RAG)</td><td>Matches the fragment to the closest real attested tablet line and cites it as evidence.</td></tr>
+            <tr><td>Translation memory &amp; lexicon</td><td>Exact recall of seen fragments; correct proper-name spelling.</td></tr>
+            <tr><td>Gap reconstruction</td><td>Re-samples, keeps the most coherent reading, fills gaps, and labels each result by source (attested / cited / model estimate).</td></tr>
+            <tr><td>Hallucination filter</td><td>Trims over-reconstruction the source does not support.</td></tr>
+            <tr><td>Post-processing</td><td>Wires the per-sample chain and adds grammar and semantic notes.</td></tr>
+            <tr><td>Confidence analytics</td><td>Turns stability and calibration into a grade, a risk band and a decision.</td></tr>
+            <tr><td>Evaluation &amp; metrics</td><td>chrF scoring, component ablation, and calibration checks.</td></tr>
+            <tr><td>Reports &amp; outputs</td><td>A Plotly chart, a Markdown report, and CSV outputs.</td></tr>
+            <tr><td>Cache</td><td>Caches the soup and resources by signature, so later runs start fast.</td></tr>
+            <tr><td>Cuneiform &amp; knowledge graph</td><td>Renders cuneiform and builds entity and timeline graphs.</td></tr>
+            <tr><td>Web server / API</td><td>Threaded HTTP with CORS and the JSON endpoints.</td></tr>
+            <tr><td>Testing &amp; CLI</td><td>54 self-running tests, a selftest, and the full command line.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>&#128300; How we measure quality</h3>
+      <p class="aieng-table-note">We do not ask you to take the engine's word for it. Quality is measured with <b>chrF</b> (a character n-gram overlap score used throughout machine translation), the engine's confidence is <b>calibration-checked</b> against that score (are 90%-confident readings really better?), and an <b>ablation</b> turns each component off in turn to show what it contributes. The pipeline also ships with <b>54 automated tests</b> that run on every change. The exact figures depend on the held-out set you evaluate against; the measurement code (<code>corpus_chrf</code>, <code>evaluate_ablation</code>, <code>calibration_report</code>) is in the engine and open to inspection.</p>
+
+      <h3>&#9888;&#65039; Limitations &amp; what is next</h3>
+      <div class="aieng-limits">
+        <ul class="aieng-limit-list">
+          <li><b>Reconstruction is inference, not certainty.</b> A gap is a missing word; the engine estimates it and labels how (attested / cited / model). It is most accurate on genuine formulaic fragments and weakest on a sentence built and then broken by hand.</li>
+          <li><b>Coverage is bounded by the data.</b> The dictionary is large but not exhaustive, and the attested-parallel corpus is a curated starting set, so retrieval grounds some fragments and not others.</li>
+          <li><b>Pronunciation is reconstructed.</b> No recording of spoken Akkadian survives, so the voice is a scholarly approximation offered as a teaching aid.</li>
+        </ul>
+        <p class="aieng-table-note"><b>What is next:</b> grow the attested corpus from open Oracc editions so grounding fires more often; add held-out chrF and calibration figures to this page; and extend the same pipeline to other low-resource and endangered languages, which is the real goal.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SUPPORT US -->
+  <section id="support" class="nav-section container" aria-label="Support us">
+    <h2>Support Us</h2>
+    <p class="ns-lead">Have feedback, a correction, or want to help this project grow? Send us a message.</p>
+    <form id="supportForm" class="support-form" novalidate>
+      <div class="sf-row">
+        <input type="text" id="sfName" placeholder="Your name" autocomplete="name">
+        <input type="email" id="sfEmail" placeholder="Your email (so we can reply)" autocomplete="email" required>
+      </div>
+      <textarea id="sfMsg" rows="5" placeholder="Your message…" required></textarea>
+      <div class="sf-actions">
+        <button type="submit" class="btn-solid" id="sfSend">✉ Send message</button>
+        <span class="sf-status" id="sfStatus" role="status" aria-live="polite"></span>
+      </div>
+    </form>
+  </section>
+
+
+
+</main>
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+<footer class="site-footer">
+  <div class="footer-inner container">
+    <div class="footer-links">
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+    </div>
+    <div class="footer-social">
+      <a href="#" aria-label="Facebook">Facebook</a>
+      <a href="#" aria-label="Instagram">Instagram</a>
+      <a href="#" aria-label="YouTube">YouTube</a>
+    </div>
+    <p class="footer-copy">© 2026 IRT. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="data/akkadian/cuneiform_keys.js?v=3"></script>
+<script src="data/akkadian/cuneiform_signs.js?v=3"></script>
+<script src="data/engine_src.js?v=5"></script>
+<script src="js/activity-log.js?v=5"></script>
+<script src="js/script.js?v=26"></script>
+<script src="js/ai-graph.js?v=7"></script>
+<script src="js/intro.js?v=3"></script>
+</body>
+</html>

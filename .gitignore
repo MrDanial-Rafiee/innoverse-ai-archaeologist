@@ -1,0 +1,30 @@
+# Local virtual environment — recreated by RUN_INNOVERSE.bat on each machine.
+# Do NOT ship this folder: a venv is machine-specific and is not portable.
+.venv/
+
+# Python caches
+__pycache__/
+*.pyc
+
+# Runtime outputs written by the engine
+CSV/
+output/
+
+# AI model checkpoints — hosted on Google Drive, too large for git. See models/README.md.
+models/model_1/
+models/model_2/
+models/model_3/
+models/_cache/
+
+# Internal working notes — not part of the delivered project.
+# Remove these files from the folder before handing the project to reviewers.
+PROJECT_HANDOFF.md
+DEMO_SCRIPT.md
+SLIDES.md
+
+# Individual team portraits: not referenced anywhere in the site, and they are
+# identifiable photos of real people. Excluded from the public repository.
+images/Mr Amir.jpg
+images/Mr Danial.jpg
+images/Mr Sepehr.jpg
+images/Ms Sara.jpg

@@ -1,0 +1,65 @@
+# INNOVERSE — curated attested-parallel corpus for gap reconstruction (retrieval / RAG)
+#
+# WHAT: a small, hand-checked set of standard, widely published Akkadian formulae —
+#       mostly Old Assyrian merchant letters and accounts (Kanesh/karum) plus a few
+#       Old Babylonian and Neo-Assyrian royal formulae. Old Assyrian and royal texts
+#       are famously formulaic, so a real fragment usually has a close attested
+#       parallel here. The reconstruction engine retrieves the closest line and
+#       CITES it as evidence next to the model's estimate.
+#
+# WHY : this is what makes the Gap tool "grounded" rather than a free guess — on a
+#       genuine formulaic fragment it can point at the real attested line it matched.
+#
+# FORMAT : transliteration <TAB> English guide-gloss <TAB> genre/source
+# NOTE   : transliterations use this project's plain-ASCII convention (sz = š, no
+#          diacritics) so they match what the cuneiform keyboard produces. Glosses
+#          are teaching guide-words, not critical editions.
+# LICENSE: formulae drawn from open Oracc editions (RINAP / SAAo / OA archives),
+#          reused under CC BY-SA 3.0 with attribution. See ATTRIBUTIONS.md.
+#
+# transliteration	english	source
+a-na be-li-ia qi-bi-ma	Speak to my lord	Old Assyrian / Old Babylonian letter opening
+a-na a-hi-ia qi-bi-ma	Speak to my brother	Old Assyrian letter opening
+a-na um-mi-a qi-bi-ma	Speak to the financier	Old Assyrian letter opening
+a-na pu-szu-ke-en qi-bi-ma	Speak to Pushu-ken	Old Assyrian letters (Kanesh)
+a-na a-wi-lim qi-bi-ma	Speak to the gentleman	Old Babylonian letter opening
+a-na be-li-ia qi-bi-ma um-ma a-bu-ka-ma	Speak to my lord: thus says your father	Old Babylonian letter formula
+um-ma pu-zur-a-szur-ma	Thus says Puzur-Ashur	Old Assyrian letter formula
+um-ma a-szur-i-di-ma	Thus says Ashur-idi	Old Assyrian letter formula
+1 ma-na kaspum	one mina of silver	Old Assyrian account
+2 ma-na kaspum sza-ru-pa-am	two minas of refined silver	Old Assyrian account
+1 ma-na kaspum a-na be-li-ia	one mina of silver for my lord	Old Assyrian account
+kaspum sza-ru-pu-um	refined silver	Old Assyrian account
+kaspam a-na pu-szu-ke-en a-di-in	I gave the silver to Pushu-ken	Old Assyrian letters
+kaspam am-hur	I received the silver	Old Assyrian letters
+kaspam usz-te-bi-lam	I sent the silver here	Old Assyrian letters
+a-na pu-zur-a-szur a-di-in	I gave it to Puzur-Ashur	Old Assyrian account
+tup-pu-um sza pu-szu-ke-en	a tablet of Pushu-ken	Old Assyrian legal
+tup-pu-um sza a-szur-i-di	a tablet of Ashur-idi	Old Assyrian legal
+tup-pu-um sza be-li-ia	a tablet of my lord	Old Assyrian legal
+ku-nu-uk pu-szu-ke-en	the seal of Pushu-ken	Old Assyrian seal caption
+ku-nu-uk a-szur-i-di	the seal of Ashur-idi	Old Assyrian seal caption
+igi en-na-nim	before Ennanum, witness	Old Assyrian witness list
+igi a-szur-i-di	before Ashur-idi, witness	Old Assyrian witness list
+szi-bu a-na-ku	I am a witness	Old Assyrian legal
+a-wi-lum a-na a-wi-lim	one man to another man	Old Babylonian law
+pu-zur-a-szur id-di-in	Puzur-Ashur gave	Old Assyrian account
+a-szur-i-di il-qe	Ashur-idi took	Old Assyrian account
+a-na-ku a-di-in	I gave	Old Babylonian
+asz-pur-ma	I wrote to him, and	Old Assyrian / Old Babylonian letters
+ta-asz-pu-ra-am	you wrote to me	Old Babylonian letters
+mi-ma an-ni-im	all of this	Old Assyrian
+ki-ma a-wa-tim	according to the matter	Old Assyrian
+a-hu-um a-na a-hi-im	brother to brother	Old Assyrian
+a-na ka-ri-im	to the merchant colony (karum)	Old Assyrian
+i-na ka-ni-isz	in Kanesh	Old Assyrian
+a-na a-lim ki	to the City (Ashur)	Old Assyrian
+a-na-ku szar-ru dan-nu	I am the strong king	Neo-Assyrian royal titulary
+szar-ru ra-bu-u szar-ru dan-nu	great king, strong king	Neo-Assyrian titulary
+szar kisz-sza-ti szar mat a-szur	king of the universe, king of Assyria	Neo-Assyrian titulary
+a-na-ku szar mat a-szur	I am the king of Assyria	Neo-Assyrian titulary
+e-gal-lam e-pu-usz	I built the palace	Neo-Assyrian building inscription
+a-na a-szur be-li-ia	to Ashur, my lord	Neo-Assyrian dedication
+a-na ba-la-ti-ia	for my life	votive dedication
+i-na u4-mi-szu-ma	at that time	royal narrative formula
+usz-szi-szu ad-di	I laid its foundations	Neo-Assyrian building inscription

@@ -1,0 +1,18 @@
+# INNOVERSE — Python dependencies
+# Installed automatically into a local virtual environment (.venv) by RUN_INNOVERSE.bat.
+# Pinned to the exact versions the project was built and tested with (Windows, CPU-only).
+# These are the packages the engine imports directly; pip resolves their sub-dependencies
+# (huggingface-hub, regex, tqdm, filelock, sympy, networkx, jinja2, ...) automatically.
+
+# --- numerics / data ---
+numpy==2.4.6
+pandas==2.3.0
+
+# --- model + inference (ByT5 model soup) ---
+torch==2.11.0
+transformers==5.12.0
+tokenizers==0.22.2
+safetensors==0.8.0
+
+# --- confidence chart (offline report generation) ---
+plotly==6.8.0
