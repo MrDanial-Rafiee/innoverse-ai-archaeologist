@@ -5,6 +5,27 @@
 >
 > INNOVERSE is an explainable AI platform for reconstructing and translating incomplete ancient-language texts. It combines an ensemble of ByT5 models, retrieval from attested historical sources, lexical and translation-memory support, semantic analysis, archaeological knowledge graphs, calibrated confidence, and evidence-based explanations.
 
+**2nd place, Innoverse Expo AI Programming Challenge**
+
+![INNOVERSE](images/banner-strip.jpg)
+
+---
+
+## Gallery
+
+| | |
+|---|---|
+| ![Akkadian](images/slide-1-akkadian.jpg) | ![Translation](images/slide-2-translation.jpg) |
+| ![Territory map](images/slide-4-territorymap.jpg) | ![Masters](images/slide-5-master.jpg) |
+
+### The team
+
+![Team](images/slide-3-myteam.jpg)
+
+| ![Danial](images/Mr%20Danial.jpg) | ![Amir](images/Mr%20Amir.jpg) | ![Sepehr](images/Mr%20Sepehr.jpg) | ![Sara](images/Ms%20Sara.jpg) |
+|:---:|:---:|:---:|:---:|
+| Danial | Amir | Sepehr | Sara |
+
 ---
 
 ## 1. Project Overview
