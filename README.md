@@ -7,6 +7,8 @@
 
 **2nd place, Innoverse Expo AI Programming Challenge**
 
+**[Live site](https://mrdanial-rafiee.github.io/innoverse-ai-archaeologist/)** (interface only; AI reconstruction needs the local engine, see [Quick Start](#16-quick-start))
+
 ![INNOVERSE](images/banner-strip.jpg)
 
 ---
